@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}/*# sourceMappingURL=Header.css.map */

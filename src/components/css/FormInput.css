@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+.asterisk {
+  color: hsl(169, 82%, 27%);
+}
+
+.inputStyles {
+  height: 3.2rem;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 0.125rem solid hsl(186, 15%, 59%);
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 16rem;
+  margin: 2rem 1rem;
+  padding: 1.875rem 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(187, 24%, 22%);
+}
+.mainWrapper .nameSection {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  border: none;
+}
+.mainWrapper .queryTypeSection {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.mainWrapper .queryTypeSection legend {
+  font-weight: 500;
+}
+.mainWrapper .queryTypeSection .queryTypeLabelBox {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  border: 0.125rem solid hsl(186, 15%, 59%);
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.mainWrapper .queryTypeSection .queryTypeLabelBox .inputStyles {
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+.mainWrapper .messageSection {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.mainWrapper .messageSection label {
+  margin-bottom: 1rem;
+}
+.mainWrapper .messageSection textarea {
+  min-height: 15rem;
+  border: 0.125rem solid hsl(186, 15%, 59%);
+  border-radius: 0.4rem;
+}
+.mainWrapper .checkboxSection {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-weight: 500;
+}
+.mainWrapper .checkboxSection .checkboxLabelBox {
+  display: flex;
+  align-items: center;
+}
+.mainWrapper .checkboxSection .checkboxLabelBox .inputStyles {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.mainWrapper .submitButton {
+  height: 3.7rem;
+  width: 100%;
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}/*# sourceMappingURL=FormInput.css.map */

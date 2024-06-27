@@ -3,56 +3,72 @@ import Header from '../Header/Header';
 
 function FormInput() {
 	return (
-		<>
+		<div className="mainWrapper"> 
+
 			<Header />
 
 			<form>
-				<fieldset>
-					<label htmlFor='Firstname'>First Name:</label>
-					<input type='text' id='Firstname' name='Firstname' required />
+				<fieldset className="nameSection">
+					<label htmlFor='FirstName'>First Name <span className="asterisk">*</span></label>
+					<input type='text' id='Firstname' name='Firstname' className="inputStyles" required />
 
-					<label htmlFor='Lastname'>Last Name:</label>
-					<input type='text' id='Lastname' name='Lastname' required />
+					<label htmlFor='Lastname'>Last Name <span className="asterisk">*</span></label>
+					<input type='text' id='LastName' name='Lastname' className="inputStyles" required />
 
-					<label htmlFor='email'>Email Address:</label>
-					<input type='email' id='email' name='email' required />
+					<label htmlFor='email'>Email Address <span className="asterisk">*</span></label>
+					<input type='email' id='email' name='email' className="inputStyles" required />
 				</fieldset>
 
-				<fieldset>
-					<legend>Query Type</legend>
+				<fieldset className="queryTypeSection">
+					<legend>Query Type <span className="asterisk">*</span></legend>
 
-					<label>
+					<label className="queryTypeLabelBox">
 						<input
 							type='radio'
 							id='GeneralEnquiry'
 							name='queryType'
 							value='GeneralEnquiry'
+                            className="inputStyles"
 							required
 						/>
 						General Enquiry
 					</label>
 
-					<label>
+					<label className="queryTypeLabelBox">
 						<input
 							type='radio'
 							id='SupportRequest'
 							name='queryType'
 							value='SupportRequest'
+                            className="inputStyles"
 							required
 						/>
 						Support Request
 					</label>
 				</fieldset>
 
-				<fieldset>
-					<legend>Message</legend>
-					<label htmlFor='message'>Message:</label>
+				<fieldset className="messageSection">
+					<label htmlFor='message'>Message <span className="asterisk">*</span></label>
 					<textarea id='message' name='message' required></textarea>
 				</fieldset>
 
-				<button type='submit'>Submit</button>
+                <fieldset className="checkboxSection">
+                <label className="checkboxLabelBox">
+                        <input
+                            type='checkbox'
+                            id='contactConsent'
+                            name='contactConsent'
+                            value='contactConsent'
+                            className="inputStyles"
+                            required
+                        />
+                        <span className="checkboxText">I consent to being contacted by the team<span className="asterisk"> *</span></span>
+                    </label>
+				</fieldset>
+
+				<button type='submit' className="submitButton">Submit</button>
 			</form>
-		</>
+		</div>
 	);
 }
 

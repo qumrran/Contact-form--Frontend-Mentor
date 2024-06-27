@@ -2,7 +2,7 @@ import './Header.scss';
 
 function Header() {
 	return (
-		<header>
+		<header className='header'>
 			<h1>Contact Us</h1>
 		</header>
 	);
