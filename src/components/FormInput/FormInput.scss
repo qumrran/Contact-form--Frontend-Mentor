@@ -21,7 +21,8 @@
 .mainWrapper {
 	display: flex;
 	flex-direction: column;
-    min-width: 16rem;
+	min-width: 16rem;
+	max-width: 66rem;
 	margin: 2rem 1rem;
 	padding: 1.875rem 1.5rem;
 	border-radius: 1rem;
@@ -33,6 +34,26 @@
 		flex-direction: column;
 		font-weight: 500;
 		border: none;
+		@media screen and (min-width: 600px) {
+			flex-direction: row;
+			flex-wrap: wrap; /* Pozwala elementom przechodzić do nowej linii */
+
+			gap: 1rem; /* Opcjonalne odstępy między elementami */
+		}
+		.nameSectrionWrapper {
+			display: flex;
+			flex-direction: column;
+
+			@media screen and (min-width: 600px) {
+				width: calc(50% - 0.5rem);
+				justify-content: space-between;
+			}
+			&:last-child {
+				@media screen and (min-width: 600px) {
+					width: 100%;
+				}
+			}
+		}
 	}
 
 	.queryTypeSection {
@@ -49,11 +70,20 @@
 			border: 0.125rem solid $grey-500;
 			border-radius: 0.4rem;
 			margin: 1rem 0;
-            font-weight: 500;
+			font-weight: 500;
 			.inputStyles {
 				margin: 0 1.5rem;
 				cursor: pointer;
+				accent-color: $green-600;
 			}
+			@media screen and (min-width: 600px) {
+				width: 100%;
+			}
+		}
+		@media screen and (min-width: 600px) {
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 1rem;
 		}
 	}
 	.messageSection {
@@ -70,30 +100,30 @@
 		}
 	}
 
-    .checkboxSection{
-        display: flex;
+	.checkboxSection {
+		display: flex;
 		align-items: center;
-        border: none;
-        font-weight: 500;
-        .checkboxLabelBox{
-            display: flex;
-            align-items: center;
-            .inputStyles {
-                margin-right: 1.5rem;
-                cursor: pointer;
-            }
-        }
-       
-    }
+		border: none;
+		font-weight: 500;
+		.checkboxLabelBox {
+			display: flex;
+			align-items: center;
+			.inputStyles {
+				margin-right: 1.5rem;
+				cursor: pointer;
+				accent-color: $green-600;
+			}
+		}
+	}
 
-    .submitButton {
-        height: 3.7rem;
-        width: 100%;
-        background-color: $green-600;
-        border: none;
-        border-radius: 0.4rem;
-        color: white;
-        font-weight: 600;
-        cursor: pointer;
-    }
+	.submitButton {
+		height: 3.7rem;
+		width: 100%;
+		background-color: $green-600;
+		border: none;
+		border-radius: 0.4rem;
+		color: white;
+		font-weight: 600;
+		cursor: pointer;
+	}
 }

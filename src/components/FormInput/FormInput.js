@@ -9,14 +9,20 @@ function FormInput() {
 
 			<form>
 				<fieldset className="nameSection">
-					<label htmlFor='FirstName'>First Name <span className="asterisk">*</span></label>
-					<input type='text' id='Firstname' name='Firstname' className="inputStyles" required />
+					<div className='nameSectrionWrapper'>
+					    <label htmlFor='FirstName'>First Name <span className="asterisk">*</span></label>
+    					<input type='text' id='Firstname' name='Firstname' className="inputStyles" required />
+					</div>
 
-					<label htmlFor='Lastname'>Last Name <span className="asterisk">*</span></label>
-					<input type='text' id='LastName' name='Lastname' className="inputStyles" required />
+					<div className='nameSectrionWrapper'>
+					    <label htmlFor='Lastname'>Last Name <span className="asterisk">*</span></label>
+    					<input type='text' id='LastName' name='Lastname' className="inputStyles" required />
+					</div>
 
-					<label htmlFor='email'>Email Address <span className="asterisk">*</span></label>
-					<input type='email' id='email' name='email' className="inputStyles" required />
+				<div className='nameSectrionWrapper'>
+				    	<label htmlFor='email'>Email Address <span className="asterisk">*</span></label>
+    					<input type='email' id='email' name='email' className="inputStyles" required />
+				</div>
 				</fieldset>
 
 				<fieldset className="queryTypeSection">

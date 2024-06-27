@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 *,
 *::before,
@@ -31,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 16rem;
+  max-width: 66rem;
   margin: 2rem 1rem;
   padding: 1.875rem 1.5rem;
   border-radius: 1rem;
@@ -42,6 +44,28 @@ body {
   flex-direction: column;
   font-weight: 500;
   border: none;
+}
+@media screen and (min-width: 600px) {
+  .mainWrapper .nameSection {
+    flex-direction: row;
+    flex-wrap: wrap; /* Pozwala elementom przechodzić do nowej linii */
+    gap: 1rem; /* Opcjonalne odstępy między elementami */
+  }
+}
+.mainWrapper .nameSection .nameSectrionWrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .mainWrapper .nameSection .nameSectrionWrapper {
+    width: calc(50% - 0.5rem);
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 600px) {
+  .mainWrapper .nameSection .nameSectrionWrapper:last-child {
+    width: 100%;
+  }
 }
 .mainWrapper .queryTypeSection {
   display: flex;
@@ -63,6 +87,19 @@ body {
 .mainWrapper .queryTypeSection .queryTypeLabelBox .inputStyles {
   margin: 0 1.5rem;
   cursor: pointer;
+  accent-color: hsl(169, 82%, 27%);
+}
+@media screen and (min-width: 600px) {
+  .mainWrapper .queryTypeSection .queryTypeLabelBox {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .mainWrapper .queryTypeSection {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }
 .mainWrapper .messageSection {
   display: flex;
@@ -90,6 +127,7 @@ body {
 .mainWrapper .checkboxSection .checkboxLabelBox .inputStyles {
   margin-right: 1.5rem;
   cursor: pointer;
+  accent-color: hsl(169, 82%, 27%);
 }
 .mainWrapper .submitButton {
   height: 3.7rem;
