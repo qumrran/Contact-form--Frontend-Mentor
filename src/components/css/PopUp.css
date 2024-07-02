@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.PopUpContainer {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28.5rem;
+  height: 6.5rem;
+  padding: 1.5rem;
+  background-color: hsl(187, 24%, 22%);
+  border-radius: 0.4rem;
+  color: hsl(0, 0%, 100%);
+  display: none;
+}
+.PopUpContainer .PopUpHeader {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.PopUpContainer .PopUpHeader img {
+  margin-right: 0.8rem;
+}
+.PopUpContainer .PopUpContent {
+  font-size: 1rem;
+}/*# sourceMappingURL=PopUp.css.map */

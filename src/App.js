@@ -1,12 +1,15 @@
 
 import FormInput from './components/FormInput/FormInput';
+import PopUp from './components/PopUp/PopUp';
 
 
-function App() {
+function App () {
   return (
-    
- <FormInput/>
-
+ 
+<>
+   <FormInput/>
+   <PopUp/>
+</>
   );
 }
 
