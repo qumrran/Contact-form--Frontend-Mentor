@@ -1,6 +1,6 @@
 
 import FormInput from './components/FormInput/FormInput';
-import PopUp from './components/PopUp/PopUp';
+
 
 
 function App () {
@@ -8,7 +8,7 @@ function App () {
  
 <>
    <FormInput/>
-   <PopUp/>
+
 </>
   );
 }
