@@ -1,44 +1,42 @@
 @import '../styles/reset.scss';
 @import '../styles/variables.scss';
 
-
 .PopUpContainer {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 28.5rem;
-    min-width: 10rem;
-    min-height: 6.5rem;
-    padding: 1.5rem;
-    background-color: $grey-900;
-    border-radius: 0.4rem;
-    color: $white;
-    @media screen and (max-width: 450px) {
-        flex-direction: column;
-       
-    }
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 28.5rem;
+	min-width: 10rem;
+	min-height: 6.5rem;
+	padding: 1.5rem;
+	background-color: $grey-900;
+	border-radius: 0.4rem;
+	color: $white;
+	@media screen and (max-width: 450px) {
+		flex-direction: column;
+	}
 
-    .PopUpHeader {
-        font-size: 1.1rem;
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.8rem;
+	.PopUpHeader {
+		font-size: 1.1rem;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0.8rem;
 
-        img {
-            margin-right: 0.8rem;
-        }
-    }
+		img {
+			margin-right: 0.8rem;
+		}
+	}
 
-    .PopUpContent {
-        font-size: 1rem;
-    }
+	.PopUpContent {
+		font-size: 1rem;
+	}
 }
 
 .showPopup .PopUpContainer {
-    display: flex; 
+	display: flex;
 }
