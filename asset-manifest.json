@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/%7BContact-form--Frontend-Mentor%7D/static/css/main.0a49c7c5.css",
+    "main.js": "/%7BContact-form--Frontend-Mentor%7D/static/js/main.51c61136.js",
+    "index.html": "/%7BContact-form--Frontend-Mentor%7D/index.html",
+    "static/media/icon-success-check.svg": "/%7BContact-form--Frontend-Mentor%7D/static/media/icon-success-check.b4e857b980bb531b1fe0b5030a0e14c0.svg",
+    "main.0a49c7c5.css.map": "/%7BContact-form--Frontend-Mentor%7D/static/css/main.0a49c7c5.css.map",
+    "main.51c61136.js.map": "/%7BContact-form--Frontend-Mentor%7D/static/js/main.51c61136.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a49c7c5.css",
+    "static/js/main.51c61136.js"
+  ]
+}
